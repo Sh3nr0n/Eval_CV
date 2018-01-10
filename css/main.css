@@ -1,3 +1,5 @@
+/* import des police en local */
+
 @font-face {
     font-family: "castorgate";
     src: url("/police/castorgate/CASTOR__.ttf") format("ttf");
@@ -6,4 +8,82 @@
 @font-face {
     font-family: "night_still_comes";
     src: url("/police/night_still_comes/NightStillComes_bold_final_sample.otf") format("otf");
+}
+
+
+/* Reset des marges par défaut du navigateur */
+*{
+    margin: 0;
+    padding:0;
+}
+
+h1,h2 {
+    font-family:night_still_comes;
+    text-transform:uppercase;
+    color:white;
+}
+
+
+/* header */
+
+#header {
+    text-align: center;
+}
+
+#headerImg{
+    width: 100%;
+    height:auto;
+}
+
+/* body */
+
+.section {
+
+    background-color:#DDCAD9;
+    border-style: solid;
+    border-color:#D1B1CB;
+    border-width: 3px;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+/* partie gauche du CV */
+
+#asideLeft{
+    float: left;
+    width: 30%;
+    height:80%;    
+}
+
+#photo{
+    background-color:transparent;
+}
+
+#photoImg {
+    border-radius:50%;
+    width: 50%;
+    height: 50%; 
+}
+
+/* partie droite du CV */
+
+#asideRight {
+    float: right;
+    width: 70%;
+    height: 80%;
+}
+
+#familleComp1 {
+    float:right;
+    width: 33%;
+    height: 100%;
+}
+
+#familleComp3 {
+    float:left;
+    width: 33%;
+    height: 100%;
 }
