@@ -11,79 +11,290 @@
 }
 
 
-/* Reset des marges par défaut du navigateur */
-*{
+/* reset des marges par défaut du navigateur */
+
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-h1,h2 {
-    font-family:night_still_comes;
-    text-transform:uppercase;
-    color:white;
+h1,
+h2 {
+    font-family: night_still_comes;
+    text-transform: uppercase;
+    color: white;
+    margin: 1%;
 }
 
 
-/* header */
+/* div recevant du contenu textuel : experiences, projets, hobbies */
 
-#header {
-    text-align: center;
+.contenu {
+    display: inline-block;
+    text-align: left;
 }
 
-#headerImg{
-    width: 100%;
-    height:auto;
-}
 
-/* body */
+/* application de la charte graphique aux différentes div du CV */
 
 .section {
-
-    background-color:#DDCAD9;
+    background-color: #DDCAD9;
     border-style: solid;
-    border-color:#D1B1CB;
-    border-width: 3px;
+    border-color: #D1B1CB;
 }
 
-#container{
+
+/* creation d'un conteneur principal */
+
+#container {
     width: 100%;
-    height: 100%;
+    height: 1800px;
+    background-color: #DDCAD9;
 }
 
-/* partie gauche du CV */
 
-#asideLeft{
-    float: left;
+/* "header" */
+
+#header {
+    height: 10%;
+    width: 98%;
+    padding: 1%;
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/24/15/45/code-820275_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#titreCV {
+    text-align: center;
+    margin: auto;
     width: 30%;
-    height:80%;    
 }
 
-#photo{
-    background-color:transparent;
+#nomPrenom {
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    width: 20%;
+}
+
+
+/* bloc photo + accroche */
+
+#photoAccroche {
+    display: inline-block;
+    height: 10%;
+    width: 100%;
+    background-color: #DDCAD9;
+}
+
+#photo {
+    display: flex;
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin: 1%;
 }
 
 #photoImg {
-    border-radius:50%;
-    width: 50%;
-    height: 50%; 
+    border-radius: 50%;
+    width: 55%;
+    height: 80%;
+    display: block;
+    margin: auto;
 }
 
-/* partie droite du CV */
-
-#asideRight {
+#accroche {
+    display: flex;
     float: right;
     width: 70%;
+    height: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 1%
+}
+
+
+/* bloc etat civil + formations */
+
+#etatCivilFormations {
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+
+#etatCivil {
+    float: left;
+    width: 23%;
+    height: 100%;
+    margin-right: 4%;
+    margin-left: 1%;
+}
+
+#socialNetworks {
+    margin-top: 50%;
+}
+
+#formations {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin-right: 1%;
+}
+
+#forma1 {
+    display: inline-block;
+    width: 35%;
     height: 80%;
+    overflow: hidden;
+    margin-left: 1%;
 }
 
-#familleComp1 {
-    float:right;
-    width: 33%;
-    height: 100%;
+#forma2 {
+    display: inline-block;
+    width: 60%;
+    height: 80%;
+    overflow: hidden;
+    margin-left: 1%;
 }
 
-#familleComp3 {
-    float:left;
-    width: 33%;
+
+/* bloc infos principales du CV */
+
+#info {
+    display: block;
+    height: 50%;
+    width: 100%;
+}
+
+#langagesTechnos {
+    float: left;
+    width: 23%;
+    height: 97%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.icon {
+    width: 10%;
+    height: 10%;
+    margin: 2%;
+}
+
+#infoMain {
+    float: right;
+    width: 70%;
     height: 100%;
+    background-color: transparent;
+}
+
+#projets {
+    margin-top: 2%;
+    float: right;
+    width: 99.9%;
+    height: 31%;
+    overflow: hidden;
+    margin-right: 2%;
+}
+
+#projet1 {
+    display: inline-block;
+    width: 10%;
+    height: 60%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+#projet2 {
+    display: inline-block;
+    width: 15%;
+    height: 60%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+#projet3 {
+    display: inline-block;
+    width: 65%;
+    height: 60%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+#competences {
+    margin-top: 2%;
+    float: right;
+    width: 99.9%;
+    height: 31%;
+    margin-right: 2%;
+}
+
+.familleComp {
+    display: inline-block;
+    width: 30%;
+    height: 60%;
+    overflow: hidden;
+    margin-left: 1%;
+}
+
+#experiencesPro {
+    float: right;
+    width: 99.9%;
+    height: 30.5%;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+#exp1 {
+    display: inline-block;
+    width: 25%;
+    height: 70%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+#exp2 {
+    display: inline-block;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+
+/* "footer" */
+
+#hobbies {
+    display: block;
+    width: 97%;
+    height: 6%;
+    overflow: hidden;
+    margin-left: 1%;
+}
+
+#hobby1 {
+    display: inline-block;
+    width: 30%;
+    height: 60%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+#hobby2 {
+    display: inline-block;
+    width: 30%;
+    height: 60%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+#hobby3 {
+    display: inline-block;
+    width: 30%;
+    height: 60%;
+    overflow: hidden;
+    margin: 1%;
 }
